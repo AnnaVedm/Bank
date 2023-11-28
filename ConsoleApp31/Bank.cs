@@ -128,7 +128,7 @@ namespace Bank_classes
                     break;
             }
         }
-        public void dob(int j)
+        private void dob(int j)
         {
             Console.Clear();
             Console.WriteLine("Сколько денег вы хотите внести на счёт?");
@@ -146,7 +146,7 @@ namespace Bank_classes
             Console.WriteLine($"Теперь на вашем счете {schet[j].dengi} руб");
             output(schet[j].shet, schet[j].FIO, schet[j].dengi);
         }
-        public void umen(int j)
+        private void umen(int j)
         {
             Console.Clear();
             Console.WriteLine("Сколько денег вы хотите вывести со счёта?");
@@ -165,7 +165,7 @@ namespace Bank_classes
             Console.WriteLine($"Вот информация о вашем текущем счёте:");
             output(schet[j].shet, schet[j].FIO, schet[j].dengi);
         }
-        public void vyvod(Bank[] schet, int j, int vybor)//Вывод всех счетов
+        private void vyvod(Bank[] schet, int j, int vybor)//Вывод всех счетов
         {
             for (int i = 0; i < schet.Length; i++)
             {
@@ -179,7 +179,7 @@ namespace Bank_classes
                 }
             }
         }
-        public void obnul(int j)
+        private void obnul(int j)
         {
             Console.Clear();
             Console.WriteLine("Вы выбрали обнуление счёта.");
